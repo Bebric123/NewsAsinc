@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Новостная лента</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Новостная лента</h1>
+  <a href="/admin" class="nav-link">Админ →</a>
+  <div id="status-badge" class="connecting">
+    <span id="status-dot"></span>
+    <span id="status-text">Подключение…</span>
+  </div>
+</header>
+
+<div id="news-list">
+  <div id="empty-state">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"
+         viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+        d="M19 20H5a2 2 0 01-2-2V7a2 2 0 012-2h3l2-2h4l2 2h3a2 2 0 012 2v11a2 2 0 01-2 2z"/>
+    </svg>
+    Новостей пока нет.<br/>Ожидаем трансляцию…
+  </div>
+</div>
+
+<footer>
+  Проверить соединение вручную: <kbd>ping</kbd> → сервер ответит <kbd>pong</kbd>
+</footer>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
